@@ -1,0 +1,31 @@
+#valid password
+"""""
+def password_check(password):
+    strength=0
+    has_upper=has_lower=has_digit=has_special=False
+    special=["!","@","#","$","%","^","&","*","()","[]","<>","|",",",".","/","\\"]
+    for i in password:
+        if i.isupper():
+            has_upper=True
+        elif i.islower():
+            has_lower=True
+        elif i.isdigit():
+            has_digit=True
+        elif i in special:
+            has_special=True
+    if has_lower and has_upper:
+        strength+=1
+    if has_digit:
+        strength+=1
+    if has_special:
+        strength+=1
+
+
+    if strength>=2:
+        print("Password is valid")
+    else:
+        print("Password is invalid")
+Your_Password=input("")
+print(password_check(Your_Password))
+
+"""

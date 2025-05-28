@@ -1,0 +1,16 @@
+#Average of list of numbers
+"""""
+List=input("")
+s=List.split(",")
+
+numbers=[ float(i) for i in s ]
+
+sum=0
+num=0
+for i in numbers:
+    sum+=i
+    num+=1
+Average=sum/num
+print(f"The Average of the given numbers:{Average:.2f}")
+
+"""

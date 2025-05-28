@@ -1,0 +1,10 @@
+#reverse string using recursive funcction
+"""""
+def reverse_string(word):
+    if len(word)<=0:
+        return word
+    else:
+        return (word[1:]) +word[0]
+text=input("")
+print(f"Before Reverse: {text}")
+print(f"After Reverse: {reverse_string(text)}")
