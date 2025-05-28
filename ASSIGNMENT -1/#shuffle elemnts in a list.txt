@@ -1,0 +1,8 @@
+
+
+import random
+
+List=[1,2,46,345,78,4556,245,46,8]
+random.shuffle(List)
+print(f"Shuffled List: {List}")
+
